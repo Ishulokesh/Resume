@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lokesh | Resume</title>
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap");
+
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      body .box {
+        display: flex;
+        align-items: center;
+      }
+
+      body .box .left,
+      body .box .right {
+        width: 25vw;
+        height: 100vh;
+        background-color: #1a1a2e;
+        text-align: center;
+      }
+
+      body .box .middle {
+        background-color: #fff;
+        width: 50vw;
+        height: 100vh;
+        text-align: center;
+      }
+
+      /* Left Block CSS */
+      body .box .left img {
+        width: 150px;
+        border-radius: 100%;
+        margin-top: 25%;
+      }
+
+      body .box .left .greeting,
+      body .box .left .name {
+        font-family: "Bebas Neue", cursive;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+      }
+
+      body .box .left .greeting {
+        font-size: 120px;
+      }
+
+      body .box .left .name {
+        font-size: 45px;
+        box-shadow: 0 10px 10px rgba(255, 255, 255, 0.50);
+      }
+        
+
+      body .box .left .description {
+        color: gray;
+        width: 55%;
+        text-align: justify;
+        padding-left: 22%;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: medium;
+      }
+
+      body .box .left .contact-details {
+        color: #fff;
+        text-align: left;
+        padding: 40% 0 0 22%;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body .box .left .contact-details i {
+        color: white;
+        padding: 7px 7px 7px 0;
+      }
+
+      /* Right Block CSS */
+      body .box .right {
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body .box .title {
+        font-size: x-large;
+        font-weight: bolder;
+        text-align: left;
+        padding: 0 0 0 10%;
+        color: #fbfbfb;
+      }
+
+      body .box .right hr {
+        width: 16%;
+        text-align: left;
+        margin-right: 73%;
+        margin-top: 0;
+        height: 6px;
+        border-color: rgb(172, 172, 172);
+        background-color: rgb(172, 172, 172);
+      }
+
+      body .box .right .languages .lang-rating {
+        text-align: left;
+      }
+
+      body .box .right .languages .lang-rating .side {
+        display: inline-block;
+        text-align: left;
+        padding: 0 0 0 10%;
+      }
+
+      body .box .right .languages {
+        color: #dfdfde;
+        margin-top: 25%;
+      }
+
+      body .box .right .languages i {
+        font-size: 14px;
+        padding: 3px;
+      }
+
+      body .box .right .hobbies {
+        margin-top: 15%;
+      }
+
+      body .box .right .hobbies .section {
+        margin: 15px 0 15px 0;
+        text-align: left;
+        padding: 0 0 0 10%;
+      }
+
+      body .box .right .hobbies .hobbie {
+        background-color: #595959;
+
+        border-radius: 4%;
+        padding: 3px;
+        margin-left: 5px;
+      }
+
+      body .box .right .hobbies .hobbie a {
+        color: #fbfbfb;
+        text-decoration: none;
+      }
+
+      body .box .right .hobbies .hobbie-right {
+        margin-left: 5px;
+      }
+
+      body .box .right .follow-me {
+        font-family: "Ropa Sans", sans-serif;
+        transform: rotate(90deg);
+        font-size: 70px;
+        position: absolute;
+        right: -125px;
+        bottom: 300px;
+        outline-style: dotted;
+      }
+
+      body .box .right .links {
+        text-align: left;
+        padding: 50% 0 0 11%;
+      }
+      body .box .right .links i {
+        font-size: 30px;
+        padding-top: 10px;
+      }
+
+      body .box .right .links .fa-instagram {
+        color: #bc2a8d;
+      }
+      body .box .right .links .fa-twitter {
+        color: #00acee;
+      }
+      body .box .right .links .fa-linkedin-in {
+        color: #0072b1;
+      }
+
+      body .box .right .links .link a {
+        color: #fbfbfb;
+        text-decoration: none;
+      }
+
+      /* Middle Content CSS */
+      body .box .middle {
+        font-family: "Poppins", sans-serif;
+      }
+
+      body .box .middle hr.vertical {
+        transform: rotate(90deg);
+        width: 900px;
+        height: 1px;
+        position: absolute;
+        left: -150px;
+        top: 480px;
+      }
+
+      body .box .middle i.vertical-index {
+        font-size: 14px;
+        padding: 3px;
+        color: #b7b7b8;
+        position: absolute;
+        left: 467px;
+      }
+
+      body .box .middle i.edu {
+        top: 43px;
+      }
+
+      body .box .middle i.exp {
+        top: 245px;
+      }
+
+      body .box .middle i.ski {
+        top: 515px;
+      }
+
+      body .box .middle i.ach {
+        top: 650px;
+      }
+
+      body .box .middle i.pro {
+        top: 790px;
+      }
+
+      body .box .middle .title {
+        font-size: x-large;
+        font-weight: bolder;
+        text-align: left;
+        padding: 0 0 0 10%;
+        color: #000;
+      }
+
+      body .box .middle hr {
+        width: 9%;
+        text-align: left;
+        margin-left: 10.2%;
+        margin-top: 0;
+        height: 6px;
+        background-color: #b8b7b8;
+        border-color: #b8b7b8;
+        border-top: #fff;
+        border-left: #fff;
+      }
+
+      body .box .middle .Education {
+        text-align: left;
+        margin-top: 10px;
+      }
+
+      body .box .middle .Education table {
+        font-family: "Ropa Sans", sans-serif;
+        font-size: 18px;
+        padding-left: 80px;
+      }
+
+      body .box .middle .Education table tr td.marks {
+        text-align: center;
+      }
+
+      body .box .middle .Education .dates {
+        color: #a5a4a4;
+      }
+
+      body .box .middle .Experience {
+        margin-top: 10px;
+      }
+
+      body .box .middle .Experience .exp {
+        text-align: left;
+        padding: 0 0 0 10%;
+      }
+
+      body .box .middle .Experience .exp .exp-1 {
+        display: inline-block;
+        height: 20%;
+      }
+
+      body .box .middle .Experience .exp .exp-1 ul {
+        width: 300px;
+        padding: 0 0 0 10px;
+        font-size: 13px;
+        margin: 5px 0 0 0;
+      }
+
+      body .box .middle .Experience .exp .right-side {
+        margin-left: 8%;
+      }
+
+      body .box .middle .Experience .exp em {
+        font-size: 13px;
+      }
+
+      body .box .middle .Experience .exp .com-name {
+        color: #9a9a9a;
+      }
+
+      body .box .middle .Skills {
+        margin-top: 10px;
+      }
+
+      body .box .middle .Skills .line {
+        text-align: left;
+      }
+
+      body .box .middle .Skills .line .skill {
+        display: inline-block;
+        margin: 0 0 0 10%;
+        color: #bababa;
+      }
+
+      body .box .middle .Skills .line .l-skill {
+        width: 100px;
+      }
+
+      body .box .middle .Skills .line .r-skill {
+        width: 100px;
+        margin-left: 150px;
+      }
+
+      body .box .middle .Skills .line .points {
+        text-align: left;
+        margin-left: 0.01%;
+        width: 120px;
+      }
+      body .box .middle .Skills .line .skill i {
+        font-size: 14px;
+        padding: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <!-- Left Block -->
+      <div class="left">
+        <img src="pic.jpg" alt="Image Not Supported" />
+        <div class="greeting">Hello,</div>
+        <div class="name">I'M LOKESH MEHTA</div>
+        <article class="description">
+          I'm a web developer & web designer based in Vadodara, India.I do like to travel
+          solo to different places and quite interested in football.
+        </article>
+        <div class="contact-details">
+          CONTACT: <br />
+          <i class="fa-solid fa-phone"></i>
+          <span class="contact number">+91 7984635330</span> <br />
+          <i class="fa-solid fa-envelope"></i>
+          <span class="contact email">rishulokesh@gmail.com</span> <br />
+          <i class="fa-solid fa-house-chimney"></i>
+          <span class="contact website">www.lokeshmehta.com</span>
+        </div>
+      </div>
+
+      <!-- Middle Block -->
+      <div class="middle">
+        <hr class="vertical" />
+
+        <i class="vertical-index fa-solid fa-circle edu"></i>
+        <i class="vertical-index fa-solid fa-circle exp"></i>
+        <i class="vertical-index fa-solid fa-circle ski"></i>
+        <i class="vertical-index fa-solid fa-circle ach"></i>
+        <i class="vertical-index fa-solid fa-circle pro"></i>
+
+        <div class="Education">
+          <div class="title">EDUCATION</div>
+          <hr />
+
+          <table cellspacing="20">
+            <tr>
+              <td class="Std">SSC</td>
+              <td class="dates">2018</td>
+              <td class="school-names">KVS BARODA</td>
+              <td class="marks">85%</td>
+            </tr>
+
+            <tr>
+              <td class="Std">HSC</td>
+              <td class="dates">2020</td>
+              <td class="school-names">KVS BARODA</td>
+              <td class="marks">80%</td>
+            </tr>
+
+            <tr>
+              <td class="Std">B.Tech</td>
+              <td class="dates">2025</td>
+              <td class="school-names">NIRMA UNIVERSITY</td>
+              <td class="marks">-</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="Experience">
+          <div class="title">EXPERIENCE</div>
+          <hr />
+
+          <div class="exp">
+            <div class="exp-1">
+              <em>May 2021 - June 2021, </em>
+              <b>Animator</b> <br />
+              <span class="com-name">Lafz Entertainment</span>
+
+              <ul>
+                <li>
+                  Worked alongside writers and producers to create unique
+                  designs to translate artistic vision into visual medium.
+                </li>
+                <li>
+                  Built upon existing character animation to develop over 120
+                  new stories.
+                </li>
+                <li>
+                  Collaborated with motion capture department to collect and
+                  apply data for specific characters.
+                </li>
+              </ul>
+            </div>
+
+            <div class="exp-1 right-side">
+              <em>Nov 2021, </em>
+              <b>Full Stack Developer</b> <br />
+              <span class="com-name">Urban Services</span>
+
+              <ul>
+                <li>
+                  Developed code following common security practices and
+                  development design patterns
+                </li>
+                <li>
+                  Wrote 200+ unit tests to verify the functionality of user
+                  interfaces, back-end processing, connectivity, and relational
+                  database interactions
+                </li>
+                <li>
+                  Maintained 8+ systems and applications as Tier 2 support
+                  (break-fix and data changes)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="Skills">
+          <div class="title">SKILLS</div>
+          <hr />
+
+          <div class="line">
+            <div class="skill l-skill">Photoshop</div>
+
+            <div class="skill points">
+              <progress id="file" value="60" max="100"></progress>
+            </div>
+
+            <div class="skill r-skill">HTML</div>
+
+            <div class="skill points">
+              <progress id="file" value="80" max="100"></progress>
+            </div>
+          </div>
+
+          <div class="line">
+            <div class="skill l-skill">Illustrator</div>
+
+            <div class="skill points">
+              <progress id="file" value="70" max="100"></progress>
+            </div>
+
+            <div class="skill r-skill">CSS</div>
+
+            <div class="skill points">
+              <progress id="file" value="70" max="100"></progress>
+            </div>
+          </div>
+
+          <div class="line">
+            <div class="skill l-skill">Premiere</div>
+
+            <div class="skill points">
+              <progress id="file" value="60" max="100"></progress>
+            </div>
+
+            <div class="skill r-skill">Node JS</div>
+
+            <div class="skill points">
+              <progress id="file" value="95" max="100"></progress>
+            </div>
+          </div>
+        </div>
+
+        <div class="Experience">
+          <div class="title">ACHIEVEMENTS</div>
+          <hr />
+
+          <div class="exp">
+            <div class="exp-1">
+              <dl>
+                <dt><em>Dec 2021, </em> <b>ACES Hackathon</b> <br /></dt>
+                <dd>
+                  <span class="com-name" style="font-size: 12px; width: 200px;"
+                    >- Got in Top 10 of 70 Participants</span
+                  >
+                </dd>
+              </dl>
+            </div>
+
+            <div class="exp-1 right-side" style="margin-left: 180px">
+              <dl>
+                <dt><em>Nov 2021, </em> <b>TECHNO SUMMIT</b> <br /></dt>
+                <dd>
+                  <span class="com-name" style="font-size: 12px; width: 200px;"
+                    >- Attended and an active volunteer</span
+                  >
+                </dd>
+            </div>
+          </div>
+        </div>
+
+        <div class="Experience">
+          <div class="title">Projects</div>
+          <hr />
+
+          <div class="exp">
+            <div class="exp-1">
+              <em>Feb 2021, </em>
+              <b>Netflix Clone</b> <br />
+
+              <ul>
+                <li>
+                  Developed Clone of Netflix with 3 member team. My work was to develop
+                  the Frontend of the Software
+                </li>
+                <li>Technologies used are ReactJS, HTML, CSS, JS, NodeJS.</li>
+              </ul>
+            </div>
+
+            <div class="exp-1 right-side">
+              <em>Mar 2022, </em>
+              <b>E-Commerce Website</b> <br />
+              <ul>
+                <li>
+                  Developed code provides E-Commerce Services with
+                  Authentication and Payment Services
+                </li>
+                <li>
+                  My Role was to attach Payment Services with proper Security
+                  and Authentication.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Block -->
+      <div class="right">
+        <div class="languages">
+          <div class="title">LANGUAGES</div>
+          <hr />
+          <div class="lang-rating">
+            <div class="side">
+              <div class="Hindi">HINDI</div>
+              <div class="Engilsh">ENGLISH</div>
+            </div>
+            <div class="side">
+              <div class="hindi-points">
+                <i class="fa-solid fa-circle"></i
+                ><i class="fa-solid fa-circle"></i
+                ><i class="fa-solid fa-circle"></i
+                ><i class="fa-solid fa-circle"></i
+                ><i class="fa-solid fa-circle"></i>
+              </div>
+              <div class="english-points">
+                <i class="fa-solid fa-circle"></i
+                ><i class="fa-solid fa-circle"></i
+                ><i class="fa-solid fa-circle"></i
+                ><i class="fa-solid fa-circle"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hobbies">
+          <div class="title">HOBBIES</div>
+          <hr />
+
+          <div class="section">
+            <span class="hobbie">
+              <a
+                href="https://www.google.com/search?q=blogging&rlz=1C5CHFA_enIN981IN981&oq=bloggin&aqs=chrome.1.69i57j0i433i512l3j0i512l2j0i433i512j0i512l3.2296j0j7&sourceid=chrome&ie=UTF-8"
+                >#BLOGGING</a
+              ></span
+            >
+            <span class="hobbie hobbie-right">
+              <a
+                href="https://www.google.com/search?q=cinema&rlz=1C5CHFA_enIN981IN981&sxsrf=ALiCzsb9G6BjvHS1fXicqVutAmH88qJc3Q%3A1661091928607&ei=WEACY9reJLCHr7wPkfiVwA8&ved=0ahUKEwja6t_Skdj5AhWww4sBHRF8BfgQ4dUDCA4&uact=5&oq=cinema&gs_lcp=Cgdnd3Mtd2l6EAMyCAgAELEDEJECMg4IABCABBCxAxCDARDJAzIFCAAQkgMyBQgAEJIDMhEILhCABBCxAxCDARDHARCvATIICAAQgAQQsQMyEQguEIAEELEDEIMBEMcBEK8BMgsILhCABBDHARCvATIRCC4QgAQQsQMQgwEQxwEQrwEyCwguEIAEEMcBEK8BOgcIABBHELADOgcIABCwAxBDOgoIABDkAhCwAxgBOhUILhDHARDRAxDUAhDIAxCwAxBDGAI6DAguEMgDELADEEMYAjoECCMQJzoECAAQQzoQCC4QsQMQgwEQxwEQ0QMQQzoLCAAQgAQQsQMQgwE6CQgjECcQRhD5AToFCAAQkQI6CAguELEDEIMBOggILhCABBCxAzoOCC4QgAQQsQMQxwEQ0QM6BQgAEIAEOg4ILhCxAxCDARDHARCvAToOCC4QgAQQsQMQgwEQ1AI6CAgAELEDEIMBOhEILhCABBCxAxCDARDHARDRA0oECEEYAEoECEYYAVCWBViJC2D8C2gCcAF4AIABuwGIAcwGkgEDMC41mAEAoAEByAETwAEB2gEGCAEQARgJ2gEGCAIQARgI&sclient=gws-wiz"
+                >#CINEMA</a
+              ></span
+            >
+          </div>
+          <div class="section">
+            <span class="hobbie">
+              <a
+                href="https://www.google.com/search?q=web+design&rlz=1C5CHFA_enIN981IN981&sxsrf=ALiCzsaWlMHp0af5bm6FwlsOsIEe3Fr2Xg%3A1661092038656&ei=xkACY9vFJ7b04-EP34iooAE&ved=0ahUKEwjbwJyHktj5AhU2-jgGHV8EChQQ4dUDCA4&uact=5&oq=web+design&gs_lcp=Cgdnd3Mtd2l6EAMyCAgAELEDEJECMgUIABCRAjILCAAQgAQQsQMQgwEyBQgAEIAEMggIABCABBDJAzIFCAAQgAQyBQgAEIAEMggIABCABBCxAzIFCAAQgAQyBQgAEIAEOgcIABBHELADOgoIABBHELADEMkDOggIABCSAxCwAzoHCAAQsAMQQzoKCAAQ5AIQsAMYAToSCC4QxwEQ0QMQyAMQsAMQQxgCOg8ILhDUAhDIAxCwAxBDGAI6BwgjECcQnQI6BAgjECc6CgguEMcBEK8BECc6CgguEMcBENEDEEM6BAgAEEM6BwguENQCEEM6CgguELEDEIMBEEM6DQguELEDEMcBENEDEEM6CggAELEDEIMBEEM6BwgAELEDEEM6CgguEMcBEK8BEEM6DggAEIAEELEDEIMBEMkDOgUIABCSA0oECEEYAEoECEYYAVD-BViDFWDjGWgCcAF4AYABogOIAcQNkgEHMC45LjQtMZgBAKABAcgBE8ABAdoBBggBEAEYCdoBBggCEAEYCA&sclient=gws-wiz"
+                >#WEB DESIGN</a
+              ></span
+            ><span class="hobbie hobbie-right"
+              ><a
+                href="https://www.google.com/search?q=GRAPHICS&rlz=1C5CHFA_enIN981IN981&sxsrf=ALiCzsZc2UTCg-E11bLeg_pMrg2WLcXFAQ%3A1661092056382&ei=2EACY47pFoWWr7wPiuOU4AM&ved=0ahUKEwiOtdaPktj5AhUFy4sBHYoxBTwQ4dUDCA4&uact=5&oq=GRAPHICS&gs_lcp=Cgdnd3Mtd2l6EAMyBwgAEEcQsAMyCggAEEcQsAMQyQMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAELADEEMyBwgAELADEEMyBwgAELADEEMyBwgAELADEEMyCggAEOQCELADGAEyCggAEOQCELADGAEyCggAEOQCELADGAEyEgguEMcBENEDEMgDELADEEMYAjISCC4QxwEQ0QMQyAMQsAMQQxgCMhIILhDHARDRAxDIAxCwAxBDGAJKBAhBGABKBAhGGAFQk3hYk3hgm3loBnABeACAAQCIAQCSAQCYAQCgAQKgAQHIARLAAQHaAQYIARABGAnaAQYIAhABGAg&sclient=gws-wiz"
+                >#GRAPHICS</a
+              ></span
+            >
+          </div>
+          <div class="section">
+            <span class="hobbie"
+              ><a
+                href="https://www.google.com/search?q=GAMES&rlz=1C5CHFA_enIN981IN981&sxsrf=ALiCzsaxIUp5YXG981aG0T-B3dA-K_k9mQ%3A1661092074202&ei=6kACY4znC9Xw4-EPvNiciAc&ved=0ahUKEwiMhJaYktj5AhVV-DgGHTwsB3EQ4dUDCA4&uact=5&oq=GAMES&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEJECMgsIABCxAxCDARCRAjIECAAQQzIECAAQQzILCAAQgAQQsQMQgwEyCwgAEIAEELEDEIMBMgsIABCABBCxAxCDATILCAAQgAQQsQMQgwEyCwgAEIAEELEDEIMBMgUIABCABDoHCAAQRxCwAzoHCAAQsAMQQ0oECEEYAEoECEYYAFC3A1i3A2D8BGgCcAF4AIABogGIAaIBkgEDMC4xmAEAoAECoAEByAEKwAEB&sclient=gws-wiz"
+                >#GAMES</a
+              ></span
+            ><span class="hobbie hobbie-right"
+              ><a
+                href="https://www.google.com/search?q=MUSIC&rlz=1C5CHFA_enIN981IN981&sxsrf=ALiCzsYkcl2QYL-_KEKzbfJQUXUJYM9rrw%3A1661092085586&ei=9UACY7-vI4n24-EPqd-0gAU&ved=0ahUKEwj__cydktj5AhUJ-zgGHakvDVAQ4dUDCA4&uact=5&oq=MUSIC&gs_lcp=Cgdnd3Mtd2l6EAMyBwgAELEDEEMyBAgAEEMyCggAELEDEIMBEEMyCggAELEDEIMBEEMyBAgAEEMyBwgAELEDEEMyCggAELEDEIMBEEMyBAgAEEMyBAgAEEMyBAgAEEM6BwgAEEcQsAM6BwgAELADEEM6CggAEOQCELADGAE6DAguEMgDELADEEMYAjoSCC4QxwEQ0QMQyAMQsAMQQxgCSgQIQRgASgQIRhgBUIoCWIoCYKkDaAJwAXgAgAGUAYgBlAGSAQMwLjGYAQCgAQKgAQHIARPAAQHaAQYIARABGAnaAQYIAhABGAg&sclient=gws-wiz"
+                >#MUSIC</a
+              ></span
+            >
+          </div>
+        </div>
+
+        <div class="follow-me">FOLLOW ME.</div>
+
+        <div class="links">
+          <i class="fa-brands fa-instagram"></i>
+          <div class="link">
+            <a href="https://www.instagram.com/potastic_pumpkin/"
+              >instagram.com/potastic_pumpkin</a
+            >
+          </div>
+
+          <i class="fa-brands fa-twitter"></i>
+          <div class="link">
+            <a href="https://twitter.com/Lokesh_Mehta"
+              >twitter.com/Lokesh_Mehta</a
+            >
+          </div>
+
+          <i class="fa-brands fa-linkedin-in"></i>
+          <div class="link">
+            <a href="https://www.linkedin.com/in/lokesh_mehta/"
+              >linkedin.com/in/lokesh_mehta</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
